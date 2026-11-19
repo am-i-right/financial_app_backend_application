@@ -37,7 +37,7 @@ public final class ReportGenerator implements Report {
             totals.merge(transaction.getCategory(), transaction.getAmount(), BigDecimal::add);
         }
 
-        StringBuilder text = new StringBuilder("========== Фнансовый отчёт ==========\n\nОтчёт за ")
+        StringBuilder text = new StringBuilder("========== Финансовый отчёт ==========\n\nОтчёт за ")
                 .append(month).append('\n');
         text.append("Доходы: ").append(income.toPlainString()).append(" RUB\n");
         text.append("Расходы: ").append(expense.toPlainString()).append(" RUB\n");
